@@ -1,5 +1,9 @@
 //CSS variables to store recurring colors
 $color-primary:#fff;
+$bg-transparent: rgba(0, 0, 0, .7);
+//CSS variable for fonts
+$font-stack: 'Roboto', sans-serif;
+
 
 html { 
     background: url(../img/bwm-bg-img-1.png) no-repeat center center fixed; 
@@ -8,29 +12,67 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+//header styles
+.header {
+    background-color: $bg-transparent;
+    border-radius: 8px;
 
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #nav-logo {
+        width: 50vw;
+        height: auto;
+    }
+}
 
 //navbar styles
 .nav-container {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: $bg-transparent;
     border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
+    .links {
+        margin-top: 1em;
+        padding: 1em;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    li {
+        margin: .5em;
+        padding: .5em;
+        display: inline-block;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $color-primary;
+        font-size: 2em;
+        font-family: $font-stack;
+    }
 }
 
-li {
-    display: inline-block;
-    margin-right: 1em;
+//grid styles
+.mainContent-container {
+    margin-top: .5em;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 5%;
+    margin: 1em;
     padding: 1em;
+    border-radius: 8px;
 }
 
-a {
-    text-decoration: none;
-    color: $color-primary;
-    font-size: 1.4em;
+.content {
+    background-color: $bg-transparent;
+    border-radius: 8px
 }
 
-#nav-logo {
-    width: 50px;
-    padding: 1em;
+.social-sidebar {
+    background-color: $bg-transparent;
+    border-radius: 8px
 }
+
