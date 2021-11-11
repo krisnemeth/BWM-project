@@ -31,8 +31,6 @@ html {
 }
 
 .nav-container .links {
-  margin-top: 1em;
-  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,15 +41,20 @@ html {
 
 .nav-container li {
   margin: .5em;
-  padding: .5em;
+  padding: 1em;
   display: inline-block;
 }
 
 .nav-container a {
   text-decoration: none;
   color: #fff;
-  font-size: 2em;
+  font-size: 1.7em;
   font-family: "Roboto", sans-serif;
+}
+
+.nav-container a:hover {
+  color: #13647F;
+  text-decoration: underline;
 }
 
 .mainContent-container {
@@ -61,11 +64,11 @@ html {
 .mainContent {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 4fr 1fr;
-      grid-template-columns: 4fr 1fr;
-  grid-gap: 5%;
-  margin: 1em;
-  padding: 1em;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 3%;
+  margin: .5em;
+  padding: .5em;
   border-radius: 8px;
 }
 
@@ -74,8 +77,43 @@ html {
   border-radius: 8px;
 }
 
+.content .hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .social-sidebar {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 8px;
+}
+
+.social-sidebar .twitter-tweet {
+  width: 90%;
+  height: auto;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer p {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 1.7em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer a:hover {
+  color: #13647F;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */
