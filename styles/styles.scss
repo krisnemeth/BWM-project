@@ -146,6 +146,76 @@ html {
     }
 }
 
+// - links
+.headline {
+    background-color: $bg-transparent;
+    text-align: center;
+    h2 {
+        font-family: $font-stack;
+        color: $color-primary;
+        font-size: 2em;
+        padding: 1em;
+    }
+}
+
+.links-container {
+    margin-top: .5em;
+}
+
+.bandLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1%;
+    margin: .5em;
+    padding: .5em;
+    border-radius: 8px;
+    
+}
+
+.content-links {
+    background-color: $bg-transparent;
+    border-radius: 8px;
+    text-align: center;
+    padding-bottom: .5em;
+
+    h2 {
+        font-family: $font-stack;
+        font-size: 3em;
+        color: $color-primary;
+    }
+
+    p {
+        font-family: $font-stack;
+        color: $color-primary;
+        font-size: 1.5em;
+        padding: .2em;
+    }
+    
+    .insta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .song {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        iframe {
+            border-radius: 3px;
+            width: 80%;
+        }
+    }
+    .tweet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
 
 
 
@@ -155,6 +225,7 @@ html {
     background-color: $bg-transparent;
     border-radius: 8px;
     text-align: center;
+    margin-top: 1em;
     padding: 1em;
     
     p {
