@@ -94,17 +94,57 @@ html {
     }
 }
 
-.social-sidebar {
+// - coming soon
+.headline {
     background-color: $bg-transparent;
-    border-radius: 8px;
-    .twitter-tweet {
-        width: 90%;
-        height: auto;
+    text-align: center;
+    h2 {
+        font-family: $font-stack;
+        color: $color-primary;
+        font-size: 2em;
+        padding: 1em;
     }
 }
 
-// - coming soon
+.comingSoon-container {
+    margin-top: .5em;
+}
 
+.comingSoon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3%;
+    margin: .5em;
+    padding: .5em;
+    border-radius: 8px;
+    
+}
+
+.content-cs {
+    background-color: $bg-transparent;
+    border-radius: 8px;
+    text-align: center;
+
+    #band-img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    h2 {
+        font-family: $font-stack;
+        color: $color-primary;
+    }
+    p {
+        font-family: $font-stack;
+        color: $color-primary;
+        padding: .2em;
+    }
+    iframe {
+        border-radius: 8px;
+    }
+}
 
 
 
