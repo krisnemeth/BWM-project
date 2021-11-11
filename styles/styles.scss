@@ -7,11 +7,12 @@ $color-tertiary: #13647F;
 $bg-transparent: rgba(0, 0, 0, .7);
 
 //CSS variable for fonts
-$font-stack: 'Roboto', sans-serif;
+$font-stack: 'Roboto',
+sans-serif;
 
 
-html { 
-    background: url(../img/bwm-bg-img-1.png) no-repeat center center fixed; 
+html {
+    background: url(../img/bwm-bg-img-1.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,6 +29,7 @@ html {
         align-items: center;
         justify-content: center;
     }
+
     #nav-logo {
         width: 50vw;
         height: auto;
@@ -39,26 +41,30 @@ html {
 .nav-container {
     background-color: $bg-transparent;
     border-radius: 8px;
+
     .links {
         display: flex;
         justify-content: space-evenly;
     }
+
     li {
         margin: .5em;
         padding: 1em;
         display: inline-block;
     }
+
     a {
         text-decoration: none;
         color: $color-primary;
         font-size: 1.7em;
         font-family: $font-stack;
     }
+
     a:hover {
         color: $color-tertiary;
         text-decoration: underline;
     }
-    
+
 }
 
 
@@ -66,7 +72,8 @@ html {
 
 // - home page
 .mainContent-container {
-    margin-top: .5em;
+    margin-top: 3em;
+    margin-bottom: 5em;
 }
 
 .mainContent {
@@ -76,8 +83,6 @@ html {
     margin: .5em;
     padding: .5em;
     border-radius: 8px;
-
-
 }
 
 .content {
@@ -98,6 +103,8 @@ html {
 .headline {
     background-color: $bg-transparent;
     text-align: center;
+    border-radius: 8px;
+
     h2 {
         font-family: $font-stack;
         color: $color-primary;
@@ -107,7 +114,8 @@ html {
 }
 
 .comingSoon-container {
-    margin-top: .5em;
+    margin-top: 3em;
+    margin-bottom: 5em;
 }
 
 .comingSoon {
@@ -118,15 +126,16 @@ html {
     margin: .5em;
     padding: .5em;
     border-radius: 8px;
-    
+
 }
 
 .content-cs {
     background-color: $bg-transparent;
     border-radius: 8px;
     text-align: center;
+    padding: 2em;
 
-    #band-img{
+    #band-img {
         width: 100%;
         height: auto;
         border-radius: 8px;
@@ -136,13 +145,11 @@ html {
         font-family: $font-stack;
         color: $color-primary;
     }
+
     p {
         font-family: $font-stack;
         color: $color-primary;
         padding: .2em;
-    }
-    iframe {
-        border-radius: 8px;
     }
 }
 
@@ -150,6 +157,8 @@ html {
 .headline {
     background-color: $bg-transparent;
     text-align: center;
+    border-radius: 8px;
+
     h2 {
         font-family: $font-stack;
         color: $color-primary;
@@ -159,7 +168,8 @@ html {
 }
 
 .links-container {
-    margin-top: .5em;
+    margin-top: 3em;
+    margin-bottom: 5em;
 }
 
 .bandLinks {
@@ -170,7 +180,7 @@ html {
     margin: .5em;
     padding: .5em;
     border-radius: 8px;
-    
+
 }
 
 .content-links {
@@ -191,13 +201,14 @@ html {
         font-size: 1.5em;
         padding: .2em;
     }
-    
+
     .insta {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
+
     .song {
         display: flex;
         align-items: center;
@@ -208,17 +219,80 @@ html {
             width: 80%;
         }
     }
+
     .tweet {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
 }
 
+// -video
+.headline {
+    background-color: $bg-transparent;
+    text-align: center;
 
+    h2 {
+        font-family: $font-stack;
+        color: $color-primary;
+        font-size: 2em;
+        padding: 1em;
+    }
+}
 
+.video-container {
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
 
+.video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3%;
+    margin: .5em;
+    padding: .5em;
+    border-radius: 8px;
+
+}
+
+.video-content {
+    background-color: $bg-transparent;
+    border-radius: 8px;
+    text-align: center;
+
+    h2 {
+        font-family: $font-stack;
+        color: $color-primary;
+    }
+
+    p {
+        font-family: $font-stack;
+        color: $color-primary;
+        padding: .2em;
+    }
+
+    .clip-container {
+        padding: 1.5em;
+
+        .clip {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+}
 //footer styles
 
 .footer {
@@ -227,13 +301,13 @@ html {
     text-align: center;
     margin-top: 1em;
     padding: 1em;
-    
+
     p {
         font-family: $font-stack;
         color: $color-primary;
         font-size: 1.7em;
     }
-    
+
     a {
         text-decoration: none;
         color: $color-primary;
@@ -243,5 +317,296 @@ html {
     a:hover {
         color: $color-tertiary;
         text-decoration: underline;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MEDIA QUERIES
+
+@media only screen and (max-width: 800px) {
+    .header {
+        background-color: $bg-transparent;
+        border-radius: 8px;
+    
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        #nav-logo {
+            width: 40vw;
+            height: auto;
+        }
+    }
+    
+    //NAVBAR STYLES
+    
+    .nav-container {
+        background-color: $bg-transparent;
+        border-radius: 8px;
+    
+        .links {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+        li {
+            margin: .3em;
+            padding: .5em;
+            
+        }
+    
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            font-size: 1.7em;
+            font-family: $font-stack;
+        }
+    
+        a:hover {
+            color: $color-tertiary;
+            text-decoration: underline;
+        }
+    
+    }
+
+
+    // - coming soon
+    .headline {
+        background-color: $bg-transparent;
+        text-align: center;
+        border-radius: 8px;
+
+        h2 {
+            font-family: $font-stack;
+            color: $color-primary;
+            font-size: 1em;
+            padding: .5em;
+        }
+    }
+
+    .comingSoon-container {
+        margin-top: 1em;
+    }
+
+    .comingSoon {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1%;
+        margin-bottom: 5em;
+        padding: 1em;
+        border-radius: 8px;
+
+    }
+
+    .content-cs {
+        background-color: $bg-transparent;
+        border-radius: 8px;
+        text-align: center;
+        padding: 1em;
+
+        #band-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h2 {
+            font-family: $font-stack;
+            color: $color-primary;
+        }
+
+        p {
+            font-family: $font-stack;
+            color: $color-primary;
+            padding: .2em;
+        }
+    }
+
+    // - links
+    .headline {
+        background-color: $bg-transparent;
+        text-align: center;
+        border-radius: 8px;
+
+        h2 {
+            font-family: $font-stack;
+            color: $color-primary;
+            font-size: 2em;
+            padding: 1em;
+        }
+    }
+
+    .links-container {
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+
+    .bandLinks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1%;
+        margin: .5em;
+        padding: .5em;
+        border-radius: 8px;
+
+    }
+
+    .content-links {
+        background-color: $bg-transparent;
+        border-radius: 8px;
+        text-align: center;
+        padding-bottom: .5em;
+
+        h2 {
+            font-family: $font-stack;
+            font-size: 3em;
+            color: $color-primary;
+        }
+
+        p {
+            font-family: $font-stack;
+            color: $color-primary;
+            font-size: 1.5em;
+            padding: .2em;
+        }
+
+        .insta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .song {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            iframe {
+                border-radius: 3px;
+                width: 80%;
+            }
+        }
+
+        .tweet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    // -video
+    .headline {
+        background-color: $bg-transparent;
+        text-align: center;
+
+        h2 {
+            font-family: $font-stack;
+            color: $color-primary;
+            font-size: 2em;
+            padding: 1em;
+        }
+    }
+
+    .video-container {
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+
+    .video {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 3%;
+        margin: .5em;
+        padding: .5em;
+        border-radius: 8px;
+
+    }
+
+    .video-content {
+        background-color: $bg-transparent;
+        border-radius: 8px;
+        text-align: center;
+
+        h2 {
+            font-family: $font-stack;
+            color: $color-primary;
+        }
+
+        p {
+            font-family: $font-stack;
+            color: $color-primary;
+            padding: .2em;
+        }
+
+        .clip-container {
+            padding: 1.5em;
+
+            .clip {
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%;
+                height: 0;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        background-color: $bg-transparent;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: .5em;
+        padding: .5em;
+    
+        p {
+            font-family: $font-stack;
+            color: $color-primary;
+            font-size: 1em;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            font-family: $font-stack;
+            font-size: .7em;
+        }
+    
+        a:hover {
+            color: $color-tertiary;
+            text-decoration: underline;
+        }
     }
 }
