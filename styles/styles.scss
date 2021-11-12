@@ -390,6 +390,43 @@ html {
     }
 }
 
+// - form-process
+
+.back-home-container {
+    background-color: $bg-transparent;
+    margin: 2em 2em;
+    text-align: center;
+    padding: 2em 1em;
+    border-radius: 8px;
+
+    h1 {
+        font-family: $font-stack;
+        color: $color-primary;
+        font-size: 3em;
+    }
+
+    .back-home-btn {
+        background-color: $color-primary;
+        border: none;
+        font-family: $font-stack;
+        font-size: 1.2em;
+        cursor: pointer;
+        padding: 1em;
+        border-radius: 5px;    
+    }
+
+    .back-home-btn:hover {
+        background-color: $color-tertiary;
+        border: none;
+        font-family: $font-stack;
+        font-size: 1.2em;
+        cursor: pointer;
+        padding: 1em;
+        border-radius: 5px; 
+    }
+    
+}
+
 
 
 

@@ -395,6 +395,40 @@ html {
   padding: .2em;
 }
 
+.back-home-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 2em 2em;
+  text-align: center;
+  padding: 2em 1em;
+  border-radius: 8px;
+}
+
+.back-home-container h1 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 3em;
+}
+
+.back-home-container .back-home-btn {
+  background-color: #fff;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.back-home-container .back-home-btn:hover {
+  background-color: #13647F;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 5px;
+}
+
 .footer {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 8px;
