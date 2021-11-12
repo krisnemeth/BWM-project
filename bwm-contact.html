@@ -40,16 +40,31 @@
     </header>
 
     <main>
-        <div class="mainContent-container">
-            <div class="mainContent">
-                <section class="content">
-                    <div class="hero">
-                        <img id="hero-img" src="./img/landing-img-text.png" alt="CROWD">
-                    </div>
-                </section>
+        <div class="headline">
+            <h1>Get in Touch</h1>
+        </div>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="submit">
+                    <p><input class="fname" type="text" placeholder="First name:" required></p>
+                    <p><input class="lname" type="text" placeholder="Last name:" required></p>
+                    <p><input class="email" type="email" placeholder="Email address:" required></p>
 
+                    <p><textarea class="comment" name="comment" placeholder="Leave a comment..."></textarea></p>
+
+                    <p>Would you like to subscribe to our newsletter?</p>
+                    <label class="label-radio" for="radio">Yes</label>
+                    <input type="radio" name="radio" id="radio">
+                    <label class="label-radio" for="radio">No</label>
+                    <input type="radio" name="radio" id="radio">
+
+                    <p><input class="btn" type="button" value="Submit"></p>
+                    
+                </form>
             </div>
         </div>
+        
+        
     </main>
     <footer>
         <div class="footer">
