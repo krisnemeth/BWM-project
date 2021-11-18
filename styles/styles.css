@@ -73,6 +73,10 @@ html {
   border-radius: 8px;
 }
 
+.content .hero {
+  text-align: center;
+}
+
 .content .hero img {
   width: 100%;
   height: auto;
