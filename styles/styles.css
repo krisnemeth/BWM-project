@@ -121,7 +121,7 @@ html {
   padding: 2em;
 }
 
-.content-cs #band-img {
+.content-cs .band-img {
   width: 100%;
   height: auto;
   border-radius: 8px;
