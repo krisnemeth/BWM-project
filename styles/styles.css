@@ -216,6 +216,7 @@ html {
 }
 
 .content-links .song iframe {
+  border: none;
   border-radius: 3px;
   width: 80%;
 }
